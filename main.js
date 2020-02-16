@@ -1,6 +1,5 @@
 import * as riot from 'riot'
 import Raw from './raw.riot'
-import SocialMedia from './social-media.riot'
 import App from './app.riot'
 
 riot.register('raw', Raw)
