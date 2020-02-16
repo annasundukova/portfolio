@@ -1,5 +1,7 @@
 name: CI
+
 on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,3 +16,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run build --if-present
+
+    - name: publish
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        external_repository: annasundukova/annasundukova.github.io
+        publish_branch: master
+        publish_dir: ./dist
