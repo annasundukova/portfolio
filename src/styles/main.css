@@ -227,7 +227,7 @@
   margin-top: 1em;
   margin-bottom: 1em;
   font-family: 'Gill Sans', sans serif;
-  font-size: 1.5em;
+  font-size: 2.0em;
   font-weight: lighter;
   text-align: center;
   text-transform: uppercase;
@@ -255,18 +255,6 @@ a {
 
 a:hover {
   border-bottom: 4px solid black;
-}
-
-body, html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: auto;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 .gallery {
