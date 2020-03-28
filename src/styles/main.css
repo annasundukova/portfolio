@@ -76,20 +76,19 @@
   100% { background-color: #f99; }
 }
 
-.welcome h2 {
-    font-size: 1.5em;
-    font-weight: lighter;
-}
-
-.welcome {
+welcome {
   margin: auto;
-  font-family: 'Gill Sans', sans serif;
+  font-family: 'Raleway', sans serif;
   font-weight: lighter;
   font-size: 1.5em;
-  font-weight: lighter;
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
+}
+
+welcome h2 {
+    font-size: 1.5em;
+    font-weight: lighter;
 }
 
 .project {
@@ -226,9 +225,9 @@
   margin: auto;
   margin-top: 1em;
   margin-bottom: 1em;
-  font-family: 'Gill Sans', sans serif;
+  font-family: 'Raleway', sans serif;
   font-size: 2.0em;
-  font-weight: lighter;
+  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   border: 2px solid black;
@@ -237,7 +236,7 @@
 
 .you {
   margin: auto;
-  font-family: 'Gill Sans', sans serif;
+  font-family: 'Raleway', sans serif;
   font-weight: lighter;
   text-align: center;
   text-transform: lowercase;
@@ -273,14 +272,15 @@ a:hover {
   user-select: none;
 }
 
-.social {
-  font-family: 'Gill Sans', sans serif;
+social {
+  display: block;
+  font-family: 'Raleway', sans serif;
   font-weight: lighter;
   text-align: right;
   padding-left: 2vw;
   padding-right: 2vw;
 }
 
-.social a:hover {
+social a:hover {
   border-bottom: 3px solid black;
 }
