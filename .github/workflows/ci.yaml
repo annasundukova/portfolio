@@ -28,3 +28,4 @@ jobs:
         external_repository: annasundukova/annasundukova.github.io
         publish_branch: master
         publish_dir: ./dist
+        cname: www.annasundukova.com
