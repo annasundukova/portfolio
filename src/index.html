@@ -1,34 +1,20 @@
-<!doctype html>
-<html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="bower_components/pure/pure.css" />
-    <link rel="stylesheet" href="bower_components/pure/grids-responsive.css" />
-    <link rel="stylesheet" href="styles/main.css">
-  
-    <script src="bower_components/riot/riot.min.js"></script>
-    <script src="bower_components/underscore/underscore-min.js"></script>
-    <script src="bower_components/mousetrap/mousetrap.js"></script>
-    <script src="scripts/manifest.js"></script>
-    <script src="tags/about.js"></script>
-    <script src="tags/gallery.js"></script>
-    <script src="tags/main.js"></script>
-    <script src="tags/me.js"></script>
-    <script src="tags/myframe.js"></script>
-    <script src="tags/project.js"></script>
-    <script src="tags/raw.js"></script>
-    <script src="tags/social-media.js"></script>
-    <script src="tags/intro.js"></script>
-    <script src="tags/you.js"></script>
-  </head>
-    
-  <body>
-    <main />
-  </body>
-    
-  <script>riot.mount('*')</script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Anna Sundukova</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../node_modules/purecss/build/pure-min.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    <body>
+        <div id="root"></div>
+        <script src="raw.riot" type="riot"></script>
+        <script src="social.riot" type="riot"></script>
+        <script src="main.js"></script>
+    </body>
 </html>
