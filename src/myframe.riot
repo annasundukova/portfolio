@@ -1,0 +1,43 @@
+<myframe>
+  <div class="frame">
+    <div class="frame-image noselect">
+      <img src={ Placeholder } width="100%"></img>
+    </div>
+    <div class="frame-underlay">
+        <p class="frame-text"><a href="#project/ this.name ">{ props.abstract }</a></p>
+    </div>
+  </div>
+
+  <script>
+    import Placeholder from './images/placeholder.png';
+      export default { Placeholder }
+  </script>
+
+  <style>
+    .frame {
+      position: relative;
+    }
+
+    .frame-image {
+      width: 100%;
+    }
+
+    .frame-underlay {
+      position: absolute;
+      display: flex;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color:rgba(255, 255, 255, 0.7);
+    }
+
+    .frame-text {
+      margin: auto;
+      font-weight: lighter;
+      font-size: 1.5em;
+      font-weight: lighter;
+      padding: 1em;
+    }
+  </style>
+</myframe>

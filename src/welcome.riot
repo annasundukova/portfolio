@@ -1,5 +1,45 @@
 <welcome>
-  <div class="me">Anna Sundukova</div>
-  <p>Experience and Service Designer bringing the methodologies of UX and human-centred design to the design of spaces. Also a product strategist, design thinking consultant, workshop facilitator, public speaker – let’s embrace the complexity!</p>
-  <p>To request portfolio, ask a question or simply get in touch, contact me:<br/><a href="mailto:anna@annasundukova.com">anna@annasundukova.com</a></p>
+  <div class="pure-u-1 intro">
+    <div class="welcome">
+      <div class="welcome-title">Anna Sundukova</div>
+      <p>Experience and Service Designer bringing the methodologies of UX and human-centred design to the design of spaces. Also a product strategist, design thinking consultant, workshop facilitator, public speaker – let’s embrace the complexity!</p>
+      <p>To request portfolio, ask a question or simply get in touch, contact me:<br/><a href="mailto:anna@annasundukova.com">anna@annasundukova.com</a></p>
+    </div>
+  </div>
+
+  <style>
+    .intro {
+      z-index: -1;
+      animation: background 30s cubic-bezier(0.25,0.1,0.25,1) infinite;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .welcome {
+      font-family: 'Raleway', sans serif;
+      font-weight: normal;
+      font-size: 1.5em;
+      text-align: left;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+
+    .welcome-title {
+      margin: auto;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-size: 2.0em;
+      font-weight: 900;
+      text-align: center;
+      text-transform: uppercase;
+      border: 2px solid black;
+      padding: 0.8em;
+    }
+  </style>
 </welcome>
