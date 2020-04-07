@@ -169,20 +169,6 @@
   font-weight: lighter;
 }
 
-/* on hover over project picture -> show project description */
-
-.frame > .frame-image {
-  display: block;
-}
-
-.frame > .frame-underlay {
-  display: none;
-}
-
-.frame:hover > .frame-underlay {
-  display: flex;
-}
-
 a {
   color: black;
   line-height: 1.5;

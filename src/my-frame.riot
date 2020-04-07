@@ -1,21 +1,17 @@
-<myframe>
+<my-frame>
   <div class="frame">
     <div class="frame-image noselect">
-      <img src={ Placeholder } width="100%"></img>
+      <img src={ props.image } width="100%"></img>
     </div>
     <div class="frame-underlay">
         <p class="frame-text"><a href="#project/ this.name ">{ props.abstract }</a></p>
     </div>
   </div>
 
-  <script>
-    import Placeholder from './images/placeholder.png';
-      export default { Placeholder }
-  </script>
-
   <style>
     .frame {
       position: relative;
+      padding: 2em;
     }
 
     .frame-image {
@@ -39,5 +35,19 @@
       font-weight: lighter;
       padding: 1em;
     }
+
+    /* on hover over project picture -> show project image */
+
+    .frame > .frame-image {
+      display: block;
+    }
+
+    .frame > .frame-underlay {
+      display: flex;
+    }
+
+    .frame:hover > .frame-underlay {
+      display: none;
+    }
   </style>
-</myframe>
+</my-frame>
