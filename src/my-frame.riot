@@ -1,24 +1,26 @@
 <my-frame>
   <div class="frame">
-    <div class="frame-image noselect">
+    <div class="title">Community Building for Germany's Largest Startup Co-Working Brand</div>
+    <div class="thumb noselect">
       <img src={ props.image } width="100%"></img>
     </div>
-    <div class="frame-underlay">
-        <p class="frame-text"><a href="#project/ this.name ">{ props.abstract }</a></p>
+    <div class="underlay">
+        <p class="descr"><a href="#gallery/">{ props.abstract }</a></p>
     </div>
+    <div class="capture">Client: Factory Berlin</div>
   </div>
 
   <style>
     .frame {
       position: relative;
-      padding: 2em;
     }
 
-    .frame-image {
+    .thumb {
+      display: block;
       width: 100%;
     }
 
-    .frame-underlay {
+    .underlay {
       position: absolute;
       display: flex;
       top: 0;
@@ -28,26 +30,35 @@
       background-color:rgba(255, 255, 255, 0.7);
     }
 
-    .frame-text {
+    .title {
       margin: auto;
-      font-weight: lighter;
       font-size: 1.5em;
+      font-weight: lighter;
+      padding: 0.5em 0 0.5em 0;
+    }
+
+    .descr {
+      margin: auto;
+      font-size: 1.25em;
       font-weight: lighter;
       padding: 1em;
     }
 
+    .capture {
+      margin: auto;
+      font-size: 1em;
+      font-weight: lighter;
+      padding-top: 0.2em 0 0.2em 0;
+    }
+
     /* on hover over project picture -> show project image */
 
-    .frame > .frame-image {
-      display: block;
-    }
-
-    .frame > .frame-underlay {
-      display: flex;
-    }
-
-    .frame:hover > .frame-underlay {
+    .underlay {
       display: none;
+    }
+
+    .frame:hover > .underlay {
+      display: flex;
     }
   </style>
 </my-frame>
